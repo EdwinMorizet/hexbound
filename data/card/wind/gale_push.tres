@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://data/card/card_definition.gd" id="1"]
+[ext_resource type="Script" path="res://data/card/element_cost_entry.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/card/areas/circle_mask_area_pattern.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/card/effects/unit_displacement_effect_definition.gd" id="4"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+element_type = 3
+amount = 1
+
+[sub_resource type="Resource" id="2"]
+script = ExtResource("3")
+outer_radius = 0
+inner_radius = 0
+
+[sub_resource type="Resource" id="3"]
+script = ExtResource("4")
+effect_id = "zephyr"
+displacement_distance = 1
+affects_friendly = true
+affects_enemy = true
+ignore_height_restrictions = true
+
+[resource]
+script = ExtResource("1")
+card_id = "zephyr"
+display_name = "Zephyr"
+element_costs = [SubResource("1")]
+cast_range_min = 1
+cast_range_max = 2
+targeting_mode = 0
+area_pattern = SubResource("2")
+effect_definition = SubResource("3")
+accent_color = Color(0.42, 0.78, 0.71, 1)
+description = "Move a friendly or enemy unit 1 hex, ignoring height restrictions."
+icon = null

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://data/card/card_definition.gd" id="1"]
+[ext_resource type="Script" path="res://data/card/element_cost_entry.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/card/areas/circle_mask_area_pattern.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/card/effects/biome_conversion_effect_definition.gd" id="4"]
+
+[sub_resource type="Resource" id="1"]
+script = ExtResource("2")
+element_type = 1
+amount = 1
+
+[sub_resource type="Resource" id="2"]
+script = ExtResource("3")
+outer_radius = 0
+inner_radius = 0
+
+[sub_resource type="Resource" id="3"]
+script = ExtResource("4")
+effect_id = "irrigate"
+from_biome_name = "Desert"
+to_biome_name = "Plain"
+alternate_from_biome_name = "Plain"
+alternate_to_biome_name = "Forest"
+
+[resource]
+script = ExtResource("1")
+card_id = "irrigate"
+display_name = "Irrigate"
+element_costs = [SubResource("1")]
+cast_range_min = 1
+cast_range_max = 3
+targeting_mode = 0
+area_pattern = SubResource("2")
+effect_definition = SubResource("3")
+accent_color = Color(0.22, 0.52, 0.88, 1)
+description = "Transform Desert to Plain, or Plain to Forest."
+icon = null

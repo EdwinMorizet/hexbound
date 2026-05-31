@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://c4v52k34tmxv8"]
+
+[ext_resource type="Script" uid="uid://dpticy0qcxilq" path="res://scripts/battle/battle_scene.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://d01m5jwo4v7pc" path="res://scenes/hex/hex_grid_preview.tscn" id="2_preview"]
+
+[node name="BattleScene" type="Node3D" unique_id=1168577468]
+script = ExtResource("1_script")
+
+[node name="BattleBoard" parent="." unique_id=1681176828 instance=ExtResource("2_preview")]
+unique_name_in_owner = true
+demo_card_paths = Array[String](["res://data/card/fire/flame_jolt.tres", "res://data/card/water/tide_step.tres", "res://data/card/earth/stone_rampart.tres", "res://data/card/wind/gale_push.tres", "res://data/card/fire/ash_bloom.tres"])
+enable_rts_camera_controls = null
+rts_camera_path = null
+rts_pan_speed = null
+rts_zoom_step = null
+rts_min_zoom_distance = null
+rts_max_zoom_distance = null
+rts_near_pitch_degrees = null
+rts_far_pitch_degrees = null
+rts_yaw_degrees = null
+rts_target_height_offset = null
+
+[node name="BattleHud" type="CanvasLayer" parent="." unique_id=203719308]
+layer = 20
+visible = false
+
+[node name="Root" type="Control" parent="BattleHud" unique_id=1458059186]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="BattleHud/Root" unique_id=1662470999]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="BattleHud/Root/Margin" unique_id=1479555523]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="Panel" type="PanelContainer" parent="BattleHud/Root/Margin/VBox" unique_id=390371146]
+custom_minimum_size = Vector2(460, 0)
+layout_mode = 2
+
+[node name="PanelVBox" type="VBoxContainer" parent="BattleHud/Root/Margin/VBox/Panel" unique_id=2015644973]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="TitleLabel" type="Label" parent="BattleHud/Root/Margin/VBox/Panel/PanelVBox" unique_id=419286813]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Battle Scene"
+
+[node name="StatusLabel" type="Label" parent="BattleHud/Root/Margin/VBox/Panel/PanelVBox" unique_id=814997785]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Seed"
+
+[node name="HintLabel" type="Label" parent="BattleHud/Root/Margin/VBox/Panel/PanelVBox" unique_id=435080674]
+layout_mode = 2
+text = "Card flow: click card in demo panel, hover hexes, left click confirm, right click cancel."
+autowrap_mode = 3
+
+[node name="ButtonRow" type="HBoxContainer" parent="BattleHud/Root/Margin/VBox/Panel/PanelVBox" unique_id=327657170]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="RegenerateButton" type="Button" parent="BattleHud/Root/Margin/VBox/Panel/PanelVBox/ButtonRow" unique_id=14439430]
+layout_mode = 2
+text = "Regenerate"
+
+[node name="NewSeedButton" type="Button" parent="BattleHud/Root/Margin/VBox/Panel/PanelVBox/ButtonRow" unique_id=1834992847]
+layout_mode = 2
+text = "New Seed"
+
+[connection signal="pressed" from="BattleHud/Root/Margin/VBox/Panel/PanelVBox/ButtonRow/RegenerateButton" to="." method="_on_regenerate_pressed"]
+[connection signal="pressed" from="BattleHud/Root/Margin/VBox/Panel/PanelVBox/ButtonRow/NewSeedButton" to="." method="_on_new_seed_pressed"]

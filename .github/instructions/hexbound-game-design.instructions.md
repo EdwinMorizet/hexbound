@@ -1,5 +1,5 @@
 ---
-description: "Use when implementing or refactoring HEXBOUND gameplay systems, including hex map generation, terrain states, movement, combat, mana, shrines, units, and cards. Enforces the game design document as source of truth for mechanics."
+description: "Use when implementing or refactoring HEXBOUND gameplay systems, including hex map generation, terrain states, movement, combat, elements, shrines, units, and cards. Enforces the game design document as source of truth for mechanics."
 name: "HEXBOUND Game Design Guardrails"
 applyTo: "**"
 ---
@@ -53,14 +53,14 @@ Prefer deterministic, testable systems and preserve tactical clarity.
 
 ## Turn, Round, And Economy Rules
 
-- Start of round: controlled Shrines generate mana, including prior Pray bonus.
-- Commander generates personal base mana at the start of its own activation.
+- Start of round: controlled Shrines generate elements, including prior Pray bonus.
+- Commander generates personal base elements at the start of its own activation.
 - End of round: both players draw 1 card.
 - Hand limit is 5.
-- Mana does not decay and stacks across turns and rounds.
+- Elements do not decay and stack across turns and rounds.
 - Shrine capture happens when a unit ends movement on shrine hex.
 - Capturing player assigns shrine element (Fire, Water, Earth, or Wind).
-- Pray action spends full activation and grants +1 extra mana from that shrine at next round start.
+- Pray action spends full activation and grants +1 extra element from that shrine at next round start.
 
 ## Combat Rules
 
@@ -83,12 +83,28 @@ Prefer deterministic, testable systems and preserve tactical clarity.
   - Skirmisher has superior climb profile.
   - Crossbowman cannot attack after moving.
   - Guardian applies adjacent movement lockdown behavior.
-- Preserve elemental identity for cards:
+- Preserve elemental visual identity for cards:
   - Earth: terrain shaping and obstruction.
   - Water: conversion, mud, and flooding control.
   - Fire: damage over terrain and spread pressure.
   - Wind: displacement and positioning disruption.
-- Scalable cards must scale cost, area, and impact consistently by invested mana.
+- Scalable cards must scale cost, area, and impact consistently by invested elements.
+
+## Cards
+
+### Specifications
+
+- Cards can have multiple elements with multiple costs.
+- Cards have a hex range.
+- Hex ranges can be : line, A* like, circle with inner circle mask, t-shape, l-shape.
+- With the A* like, player choose first hex then another one after one with A* cost based on specific conditions.
+
+### Examples
+
+- **Raise / Lower (1 Earth):** Adjust the height of 1 adjacent hex by !.  
+- **Irrigate (1 Water):** Transform a Desert hex to a Plain biome, or a Plain hex to a Forest biome.  
+- **Ignite (1 Fire):** Apply the **On Fire** state to a Plain or Forest hex. Forest biomes will burn down into Plains after 2 turns.  
+- **Zephyr (1 Wind):** Move a friendly or enemy unit 1 hex, ignoring height restrictions.
 
 ## Implementation Guidance For The Agent
 
