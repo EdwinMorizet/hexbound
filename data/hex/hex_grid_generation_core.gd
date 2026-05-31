@@ -2,7 +2,7 @@ class_name HexGridGenerationCore
 extends RefCounted
 
 var side_length: int = 5
-var seed: int = 1337
+var map_seed: int = 1337
 var elevation_frequency: float = 0.09
 var elevation_octaves: int = 4
 var moisture_frequency: float = 0.12
@@ -20,7 +20,7 @@ func configure(settings: HexGridGenerationSettings) -> void:
 	if settings == null:
 		return
 	side_length = max(2, int(settings.side_length))
-	seed = int(settings.seed)
+	map_seed = int(settings.map_seed)
 	elevation_frequency = max(0.001, float(settings.elevation_frequency))
 	elevation_octaves = maxi(1, int(settings.elevation_octaves))
 	moisture_frequency = max(0.001, float(settings.moisture_frequency))
@@ -84,13 +84,13 @@ func biome_to_string(biome: int) -> String:
 
 
 func _configure_noise() -> void:
-	_elevation_noise.seed = seed
+	_elevation_noise.seed = map_seed
 	_elevation_noise.noise_type = FastNoiseLite.TYPE_SIMPLEX_SMOOTH
 	_elevation_noise.frequency = elevation_frequency
 	_elevation_noise.fractal_octaves = elevation_octaves
 	_elevation_noise.fractal_type = FastNoiseLite.FRACTAL_FBM
 
-	_moisture_noise.seed = seed + 1013
+	_moisture_noise.seed = map_seed + 1013
 	_moisture_noise.noise_type = FastNoiseLite.TYPE_SIMPLEX_SMOOTH
 	_moisture_noise.frequency = moisture_frequency
 	_moisture_noise.fractal_octaves = moisture_octaves

@@ -148,7 +148,7 @@ func _create_hex_mesh(height:float) -> CylinderMesh:
 func _create_generation_settings() -> HexGridGenerationSettings:
 	var settings := HexGridGenerationSettings.new()
 	settings.side_length = side_length
-	settings.seed = world_seed
+	settings.map_seed = world_seed
 	settings.elevation_frequency = elevation_frequency
 	settings.elevation_octaves = elevation_octaves
 	settings.moisture_frequency = moisture_frequency
@@ -216,7 +216,7 @@ func _biome_color(biome: int) -> Color:
 
 func _sync_core_from_exports() -> void:
 	_generation_core.side_length = side_length
-	_generation_core.seed = world_seed
+	_generation_core.map_seed = world_seed
 	_generation_core.elevation_frequency = elevation_frequency
 	_generation_core.elevation_octaves = elevation_octaves
 	_generation_core.moisture_frequency = moisture_frequency

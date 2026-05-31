@@ -5,7 +5,7 @@ extends RefCounted
 ## The hex map side length in tiles.
 @export_range(2, 16, 1) var side_length: int = 5
 ## Seed used for deterministic generation.
-@export_range(-2147483648, 2147483647, 1) var seed: int = 1337
+@export_range(-2147483648, 2147483647, 1) var map_seed: int = 1337
 
 @export_group("Noise")
 ## Frequency used for elevation noise.

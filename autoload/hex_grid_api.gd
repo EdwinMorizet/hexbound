@@ -15,7 +15,7 @@ enum Biome {
 ## The hex map side length in tiles.
 @export_range(2, 16, 1) var side_length: int = 5
 ## Seed used for deterministic generation.
-@export_range(-2147483648, 2147483647, 1) var seed: int = 1337
+@export_range(-2147483648, 2147483647, 1) var map_seed: int = 1337
 
 @export_group("Noise")
 ## Frequency used for elevation noise.
@@ -37,14 +37,11 @@ enum Biome {
 ## Vertical step between tile height levels.
 @export_range(0.01, 10.0, 0.01) var height_step: float = 0.3
 
-var _elevation_noise: FastNoiseLite = FastNoiseLite.new()
-var _moisture_noise: FastNoiseLite = FastNoiseLite.new()
 var _tiles_ordered: Array[HexGridTileData] = []
 var _generation_core: HexGridGenerationCore = HexGridGenerationCore.new()
 
 
 func _ready() -> void:
-	_configure_noise()
 	generate_grid()
 
 
@@ -136,7 +133,7 @@ func biome_to_string(biome: int) -> String:
 
 func _sync_core_from_exports() -> void:
 	_generation_core.side_length = side_length
-	_generation_core.seed = seed
+	_generation_core.map_seed = map_seed
 	_generation_core.elevation_frequency = elevation_frequency
 	_generation_core.elevation_octaves = elevation_octaves
 	_generation_core.moisture_frequency = moisture_frequency
@@ -149,7 +146,7 @@ func _sync_core_from_exports() -> void:
 
 func _sync_exports_from_core() -> void:
 	side_length = _generation_core.side_length
-	seed = _generation_core.seed
+	map_seed = _generation_core.map_seed
 	elevation_frequency = _generation_core.elevation_frequency
 	elevation_octaves = _generation_core.elevation_octaves
 	moisture_frequency = _generation_core.moisture_frequency
