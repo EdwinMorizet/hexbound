@@ -5,7 +5,7 @@ extends Node3D
 @export_group("Behavior")
 ## Generates immediately when the node enters the scene tree.
 @export var auto_generate_on_ready: bool = true
-## Uses the autoload singleton instead of local generation logic.
+## Publishes generated tiles to the autoload singleton when available.
 @export var sync_with_autoload: bool = true
 ## Clears previously generated tiles before rebuilding the grid.
 @export var clear_before_generate: bool = true
@@ -47,6 +47,7 @@ extends Node3D
 @export_tool_button("Regenerate") var regenerate_in_editor: Callable = _regenerate_with_new_seed
 
 var _generation_core: HexGridGenerationCore = HexGridGenerationCore.new()
+var _visual_core: HexGridVisualCore = HexGridVisualCore.new()
 
 
 func _ready() -> void:
@@ -70,17 +71,14 @@ func _regenerate_with_new_seed() -> void:
 
 
 func _generate_tiles() -> Array[HexGridTileData]:
-	if sync_with_autoload and has_node("/root/HexGridAPI"):
-		var api = get_node("/root/HexGridAPI")
-		var settings := _create_generation_settings()
-		api.generate_grid(settings)
-		return api.get_all_tiles()
-	return _generate_tiles_local()
-
-
-func _generate_tiles_local() -> Array[HexGridTileData]:
 	_sync_core_from_exports()
-	return _generation_core.generate_grid()
+	var tiles := _generation_core.generate_grid()
+	_visual_core.tile_radius = tile_radius
+	_visual_core.tile_thickness = tile_thickness
+	if sync_with_autoload and not Engine.is_editor_hint() and has_node("/root/HexGridAPI"):
+		var api: HexGridAPI = get_node("/root/HexGridAPI")
+		api.set_tiles(tiles)
+	return tiles
 
 
 func _render_tiles(tiles: Array[HexGridTileData]) -> void:
@@ -89,7 +87,7 @@ func _render_tiles(tiles: Array[HexGridTileData]) -> void:
 		var coord_h: Vector4 = tile.coord_h
 		var biome: int = tile.biome
 		var world_position: Vector3 = tile.world_position
-		var cell_height := height_step
+		var cell_height := tile_thickness
 
 		var tile_root := Node3D.new()
 		tile_root.name = "Hex_%d_%d_%d" % [int(coord_h.x), int(coord_h.y), int(coord_h.z)]
@@ -102,14 +100,14 @@ func _render_tiles(tiles: Array[HexGridTileData]) -> void:
 		root.add_child(tile_root)
 
 		var mesh_instance := MeshInstance3D.new()
-		mesh_instance.mesh = _create_hex_mesh(tile.height * height_step)
-		mesh_instance.material_override = _create_biome_material(biome)
+		mesh_instance.mesh = _visual_core.build_hex_mesh(max(tile_thickness, float(tile.height) * height_step))
+		mesh_instance.material_override = _visual_core.build_biome_material(biome)
 		mesh_instance.position = Vector3(0.0, cell_height * 0.5, 0.0)
 		mesh_instance.rotation_degrees = Vector3(0.0, 30.0, 0.0)
 		tile_root.add_child(mesh_instance)
 
 		if generate_collision:
-			_add_collision(tile_root, cell_height)
+			_add_collision(tile_root, mesh_instance.mesh)
 
 		if Engine.is_editor_hint() and persist_generated_nodes_in_scene:
 			var scene_owner := _get_scene_owner()
@@ -135,83 +133,18 @@ func _clear_tiles() -> void:
 		child.queue_free()
 
 
-func _create_hex_mesh(height:float) -> CylinderMesh:
-	var mesh := CylinderMesh.new()
-	mesh.top_radius = tile_radius
-	mesh.bottom_radius = tile_radius
-	mesh.height = height
-	mesh.radial_segments = 6
-	mesh.rings = 1
-	return mesh
-
-
-func _create_generation_settings() -> HexGridGenerationSettings:
-	var settings := HexGridGenerationSettings.new()
-	settings.side_length = side_length
-	settings.map_seed = world_seed
-	settings.elevation_frequency = elevation_frequency
-	settings.elevation_octaves = elevation_octaves
-	settings.moisture_frequency = moisture_frequency
-	settings.moisture_octaves = moisture_octaves
-	settings.desert_moisture_threshold = desert_moisture_threshold
-	settings.forest_moisture_threshold = forest_moisture_threshold
-	settings.tile_radius = tile_radius
-	settings.height_step = height_step
-	return settings
-
-
-func _add_collision(tile_root: Node3D, cell_height: float) -> void:
+func _add_collision(tile_root: Node3D, mesh: Mesh) -> void:
 	var body := StaticBody3D.new()
 	body.name = "CollisionBody"
-	body.position = Vector3(0.0, cell_height * 0.5, 0.0)
+	body.position = Vector3(0.0, tile_thickness * 0.5, 0.0)
 
 	var collision_shape := CollisionShape3D.new()
 	collision_shape.name = "CollisionShape"
 
-	var shape := ConvexPolygonShape3D.new()
-	shape.points = _create_hex_prism_points(tile_radius, cell_height)
-	collision_shape.shape = shape
+	collision_shape.shape = _visual_core.build_collider_shape(mesh)
 
 	body.add_child(collision_shape)
 	tile_root.add_child(body)
-
-
-func _create_hex_prism_points(radius: float, thickness: float) -> PackedVector3Array:
-	var points := PackedVector3Array()
-	var half_h := thickness * 0.5
-	for i in range(6):
-		var angle := deg_to_rad(30.0 + float(i) * 60.0)
-		var x := cos(angle) * radius
-		var z := sin(angle) * radius
-		points.append(Vector3(x, half_h, z))
-		points.append(Vector3(x, -half_h, z))
-	return points
-
-
-func _create_biome_material(biome: int) -> StandardMaterial3D:
-	var material := StandardMaterial3D.new()
-	material.albedo_color = _biome_color(biome)
-	material.roughness = 0.85
-	material.metallic = 0.0
-	return material
-
-
-func _biome_color(biome: int) -> Color:
-	match biome:
-		0:
-			return Color(0.20, 0.40, 0.85)
-		1:
-			return Color(0.84, 0.74, 0.45)
-		2:
-			return Color(0.56, 0.72, 0.43)
-		3:
-			return Color(0.19, 0.48, 0.24)
-		4:
-			return Color(0.46, 0.46, 0.49)
-		5:
-			return Color(0.86, 0.86, 0.89)
-		_:
-			return Color(1.0, 0.0, 1.0)
 
 
 func _sync_core_from_exports() -> void:

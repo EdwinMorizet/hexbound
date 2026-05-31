@@ -11,68 +11,26 @@ enum Biome {
 	MOUNTAIN_PEAK,
 }
 
-@export_group("Grid")
-## The hex map side length in tiles.
-@export_range(2, 16, 1) var side_length: int = 5
-## Seed used for deterministic generation.
-@export_range(-2147483648, 2147483647, 1) var map_seed: int = 1337
-
-@export_group("Noise")
-## Frequency used for elevation noise.
-@export_range(0.001, 1.0, 0.001) var elevation_frequency: float = 0.09
-## Octaves used for elevation noise.
-@export_range(1, 8, 1) var elevation_octaves: int = 4
-## Frequency used for moisture noise.
-@export_range(0.001, 1.0, 0.001) var moisture_frequency: float = 0.12
-## Octaves used for moisture noise.
-@export_range(1, 8, 1) var moisture_octaves: int = 3
-## Moisture threshold below which height 1-2 becomes desert.
-@export_range(-1.0, 1.0, 0.01) var desert_moisture_threshold: float = -0.05
-## Moisture threshold above which higher land becomes forest.
-@export_range(-1.0, 1.0, 0.01) var forest_moisture_threshold: float = 0.18
-
-@export_group("Geometry")
-## Hex radius used for world-space placement.
-@export var tile_radius: float = 1.0
-## Vertical step between tile height levels.
-@export_range(0.01, 10.0, 0.01) var height_step: float = 0.3
-
 var _tiles_ordered: Array[HexGridTileData] = []
-var _generation_core: HexGridGenerationCore = HexGridGenerationCore.new()
 
 
-func _ready() -> void:
-	generate_grid()
+# Stores externally generated tiles and emits the standard grid signals.
+func set_tiles(tiles: Array[HexGridTileData]) -> void:
+	_tiles_ordered = tiles
+	_emit_grid_generated()
 
 
-func configure(settings: HexGridGenerationSettings) -> void:
-	if settings == null:
-		return
-	_generation_core.configure(settings)
-	_sync_exports_from_core()
-
-
-func generate_grid(settings: HexGridGenerationSettings = null) -> Array[HexGridTileData]:
-	if settings != null:
-		_generation_core.configure(settings)
-		_sync_exports_from_core()
-	else:
-		_sync_core_from_exports()
-
-	_tiles_ordered = _generation_core.generate_grid()
-
-	grid_generated.emit(_tiles_ordered.size())
-	return _tiles_ordered
-
-
+# Returns the most recently generated tile array.
 func get_all_tiles() -> Array[HexGridTileData]:
 	return _tiles_ordered
 
 
+# Returns true when a tile exists at the requested axial coordinate.
 func has_tile(q: int, r: int) -> bool:
 	return get_tile(q, r) != null
 
 
+# Finds the tile for an axial coordinate by scanning the cached tile list.
 func get_tile(q: int, r: int) -> HexGridTileData:
 	for tile in _tiles_ordered:
 		if int(tile.coord_h.x) == q and int(tile.coord_h.y) == r:
@@ -80,6 +38,7 @@ func get_tile(q: int, r: int) -> HexGridTileData:
 	return null
 
 
+# Returns the stored coord_h vector for a tile, or Vector4.ZERO when missing.
 func get_coord_h(q: int, r: int) -> Vector4:
 	var tile := get_tile(q, r)
 	if tile == null:
@@ -87,6 +46,7 @@ func get_coord_h(q: int, r: int) -> Vector4:
 	return tile.coord_h
 
 
+# Returns the height at an axial coordinate, or -1 when no tile exists.
 func get_height_at(q: int, r: int) -> int:
 	var tile := get_tile(q, r)
 	if tile == null:
@@ -94,6 +54,7 @@ func get_height_at(q: int, r: int) -> int:
 	return tile.height
 
 
+# Returns the biome at an axial coordinate, or -1 when no tile exists.
 func get_biome_at(q: int, r: int) -> int:
 	var tile := get_tile(q, r)
 	if tile == null:
@@ -101,6 +62,7 @@ func get_biome_at(q: int, r: int) -> int:
 	return tile.biome
 
 
+# Returns the cached world position for a tile, or Vector3.ZERO when missing.
 func get_world_position(q: int, r: int) -> Vector3:
 	var tile := get_tile(q, r)
 	if tile == null:
@@ -108,10 +70,7 @@ func get_world_position(q: int, r: int) -> Vector3:
 	return tile.world_position
 
 
-func axial_to_world(q: int, r: int, height: int = 0) -> Vector3:
-	return _generation_core.axial_to_world(q, r, height)
-
-
+# Maps a biome enum value to a readable display string.
 func biome_to_string(biome: int) -> String:
 	match biome:
 		Biome.WATER:
@@ -130,28 +89,9 @@ func biome_to_string(biome: int) -> String:
 			return "Unknown"
 
 
-
-func _sync_core_from_exports() -> void:
-	_generation_core.side_length = side_length
-	_generation_core.map_seed = map_seed
-	_generation_core.elevation_frequency = elevation_frequency
-	_generation_core.elevation_octaves = elevation_octaves
-	_generation_core.moisture_frequency = moisture_frequency
-	_generation_core.moisture_octaves = moisture_octaves
-	_generation_core.desert_moisture_threshold = desert_moisture_threshold
-	_generation_core.forest_moisture_threshold = forest_moisture_threshold
-	_generation_core.tile_radius = tile_radius
-	_generation_core.height_step = height_step
-
-
-func _sync_exports_from_core() -> void:
-	side_length = _generation_core.side_length
-	map_seed = _generation_core.map_seed
-	elevation_frequency = _generation_core.elevation_frequency
-	elevation_octaves = _generation_core.elevation_octaves
-	moisture_frequency = _generation_core.moisture_frequency
-	moisture_octaves = _generation_core.moisture_octaves
-	desert_moisture_threshold = _generation_core.desert_moisture_threshold
-	forest_moisture_threshold = _generation_core.forest_moisture_threshold
-	tile_radius = _generation_core.tile_radius
-	height_step = _generation_core.height_step
+# Emits the local and global grid-generated signals for the current tile cache.
+func _emit_grid_generated() -> void:
+	grid_generated.emit(_tiles_ordered.size())
+	if has_node("/root/EventBus"):
+		var event_bus: EventBus = get_node("/root/EventBus")
+		event_bus.hex_grid_generated.emit(_tiles_ordered.size())
