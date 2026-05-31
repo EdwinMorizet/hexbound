@@ -1,0 +1,2665 @@
+[gd_scene format=3 uid="uid://d01m5jwo4v7pc"]
+
+[ext_resource type="Script" uid="uid://di4b8ptl2ka6k" path="res://scripts/hex/hex_grid_generator_3d.gd" id="1_grid"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cl3of"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8s6nd"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nqqk0"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aec1s"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1wysq"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2mhya"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tnmdl"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vrx6t"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lhu1r"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w6jym"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ggym4"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jr0y2"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_74keu"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_22rmt"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5jmdo"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2siq"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_y6qqs"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mq0t0"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p15gh"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_a7met"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5kpfa"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ygr8"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ncycq"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_l5qj6"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xmc5d"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fhqvk"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7nbkk"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1mnje"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_crqrg"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ppb0y"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xrcxc"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_r0qgl"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ilwg5"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ib2b0"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_axma0"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dk5j3"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_30c2b"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vp211"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6l2rj"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_str5d"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0i51r"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dg8dv"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_flnfo"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6j3f6"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cvkx6"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqki7"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ywt6u"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5o0jh"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bn35o"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2b8c2"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qhbkd"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_csy13"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gd2bv"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vfxrl"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qjgfb"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ijwcd"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_toih1"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oke3m"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nfjc0"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tcvgo"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v87fb"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_cy3tx"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1v1u6"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vgtf8"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_phyuh"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4fwnd"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1samb"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0h1u4"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mdybj"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fovuw"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ck4qd"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0rcqt"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yh3nq"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dt6o1"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3gph1"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uj71a"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dnekl"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4g7sc"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xtbml"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_64t0p"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7a50k"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7en0"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2ifoj"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_thfe2"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mtu6s"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_37gt1"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_brcnf"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2b7s7"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_5dwsy"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vhgy3"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sndjx"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fyjfy"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_53kjo"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ep2i"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_5mt1f"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_em4in"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vgsc4"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_h3uca"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rhfld"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ks6a8"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_pmfoh"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_i1sp0"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cyhq8"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ogieg"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gwa6q"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iivpf"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_32jf0"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vamve"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4872"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_f6lac"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_meu4f"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yf2ro"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rflr7"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_h4dva"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_11kep"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_76qk7"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_437gl"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ceaar"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fmpnv"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.25
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wkmni"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6x0xp"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4d3es"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3tky1"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q2lp0"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_prudx"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1084p"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wq64j"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qb7lq"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_84aku"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2hyuv"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_t3hmp"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ioq5j"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sx4b5"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nmbju"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xb1p8"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_04ydh"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4t5tw"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_315wf"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7gyh"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_svqok"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nxqb3"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_27ce1"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kvea6"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_27nmg"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jl6aa"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_to35p"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xm2iq"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yjwbu"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_r5rym"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xex0d"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eh5xc"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_bth6r"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8k351"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xsmn1"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_sqy6a"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xrpua"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u0ase"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xqo2w"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_d41ej"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mmrnf"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vwkg6"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_b0aoi"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_clrdw"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kaamg"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2vodq"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ncp3b"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rq4d1"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rgmq5"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tpknd"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rfkhi"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_41ja1"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_385xr"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_74jqy"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g2osd"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fuca8"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_i2d0u"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bwr1y"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3krox"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_u7scw"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_w3k6a"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xeaq4"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6tvq8"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_owmhp"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dixku"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xxee5"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2vjhq"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jesiw"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3fdwd"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u6kj5"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_auj42"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_7djwg"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_12xfj"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dcpda"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_c3rdt"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kim85"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nxdbn"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_mx15b"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5kkpn"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7plf6"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_p8nm6"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0uurf"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_131b1"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_uvtsw"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ropgp"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lurc4"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_cw4jk"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kf3q4"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_osbs1"]
+albedo_color = Color(0.56, 0.72, 0.43, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_a48le"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_42t5j"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8onf6"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_r4dk6"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_c8oye"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2kav"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nl7ew"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dntjx"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1h8o7"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6gmwc"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2ulxe"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vcgo7"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8u6ni"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tnr24"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tnyij"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ej2gm"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bqxck"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2ipn"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4t24m"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1rt36"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8fq8m"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fslyn"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ni1di"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oskd3"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8noo2"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fmdnj"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4kq8c"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qrevc"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_70wxg"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xort8"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nm02m"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_flk0l"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b3j3v"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_lxvs6"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cigi0"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ho6l3"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_h3okr"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6pnnr"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tvf03"]
+albedo_color = Color(0.19, 0.48, 0.24, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_u6ela"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mq2cx"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cgyai"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yoysl"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jyond"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1qd7i"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_b4u6j"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j5o2w"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7d0od"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nb5i1"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uwes0"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lq684"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jda66"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 1.0
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8a6jm"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tm2cl"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_arwlf"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0qxrp"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2562x"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ihm0d"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xqwph"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hbni1"]
+albedo_color = Color(0.46, 0.46, 0.49, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_80csa"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.75
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0dy7d"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wcin0"]
+albedo_color = Color(0.84, 0.74, 0.45, 1)
+roughness = 0.85
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_42lda"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.5
+radial_segments = 6
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hrt8l"]
+points = PackedVector3Array(0.8660254, 0.125, 0.5, 0.8660254, -0.125, 0.5, 6.123032e-17, 0.125, 1, 6.123032e-17, -0.125, 1, -0.8660254, 0.125, 0.5, -0.8660254, -0.125, 0.5, -0.8660254, 0.125, -0.5, -0.8660254, -0.125, -0.5, -1.8369095e-16, 0.125, -1, -1.8369095e-16, -0.125, -1, 0.8660254, 0.125, -0.5, 0.8660254, -0.125, -0.5)
+
+[node name="HexGridPreview" type="Node3D" unique_id=184908540]
+script = ExtResource("1_grid")
+persist_generated_nodes_in_scene = true
+side_length = 6
+world_seed = 1755058544
+tile_thickness = 0.1
+height_step = 0.25
+base_y = 0.09999999999999432
+moisture_frequency = 0.5
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1974080904]
+transform = Transform3D(0.866025, 0, -0.5, 0.204443, 0.912668, 0.354105, 0.456773, -0.408691, 0.789239, 0, 18, 20)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1041010710]
+transform = Transform3D(0.015672093, 0.6958513, -0.7180152, -0.7069332, 0.5155492, 0.48420483, 0.7071069, 0.49999994, 0.5000001, 0, 8, 0)
+light_energy = 1.182
+light_indirect_energy = 1.364
+light_specular = 0.636
+shadow_enabled = true
+shadow_opacity = 0.42
+
+[node name="HexTiles" type="Node3D" parent="." unique_id=600736898]
+
+[node name="@Node3D@46487" type="Node3D" parent="HexTiles" unique_id=1884316860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.35, -4.3301272)
+metadata/coord_h = Vector4(-5, 0, 5, 2)
+
+[node name="@MeshInstance3D@46488" type="MeshInstance3D" parent="HexTiles/@Node3D@46487" unique_id=626326150]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_cl3of")
+mesh = SubResource("CylinderMesh_8s6nd")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46487" unique_id=510828682]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46487/CollisionBody" unique_id=1822598857]
+shape = SubResource("ConvexPolygonShape3D_nqqk0")
+
+[node name="@Node3D@46489" type="Node3D" parent="HexTiles" unique_id=667311898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.475, -2.598076)
+metadata/coord_h = Vector4(-5, 1, 4, 3)
+
+[node name="@MeshInstance3D@46490" type="MeshInstance3D" parent="HexTiles/@Node3D@46489" unique_id=3887456]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_aec1s")
+mesh = SubResource("CylinderMesh_1wysq")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46489" unique_id=223347554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46489/CollisionBody" unique_id=659665744]
+shape = SubResource("ConvexPolygonShape3D_2mhya")
+
+[node name="@Node3D@46491" type="Node3D" parent="HexTiles" unique_id=1340005958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.475, -0.8660254)
+metadata/coord_h = Vector4(-5, 2, 3, 3)
+
+[node name="@MeshInstance3D@46492" type="MeshInstance3D" parent="HexTiles/@Node3D@46491" unique_id=2135581382]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_tnmdl")
+mesh = SubResource("CylinderMesh_vrx6t")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46491" unique_id=1779110070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46491/CollisionBody" unique_id=481722669]
+shape = SubResource("ConvexPolygonShape3D_lhu1r")
+
+[node name="@Node3D@46493" type="Node3D" parent="HexTiles" unique_id=1726598800]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.475, 0.8660254)
+metadata/coord_h = Vector4(-5, 3, 2, 3)
+
+[node name="@MeshInstance3D@46494" type="MeshInstance3D" parent="HexTiles/@Node3D@46493" unique_id=1302196086]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_w6jym")
+mesh = SubResource("CylinderMesh_ggym4")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46493" unique_id=1452277558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46493/CollisionBody" unique_id=1300405284]
+shape = SubResource("ConvexPolygonShape3D_jr0y2")
+
+[node name="@Node3D@46495" type="Node3D" parent="HexTiles" unique_id=1272905295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.35, 2.598076)
+metadata/coord_h = Vector4(-5, 4, 1, 2)
+
+[node name="@MeshInstance3D@46496" type="MeshInstance3D" parent="HexTiles/@Node3D@46495" unique_id=1184598262]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_74keu")
+mesh = SubResource("CylinderMesh_22rmt")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46495" unique_id=1935244604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46495/CollisionBody" unique_id=1862649551]
+shape = SubResource("ConvexPolygonShape3D_5jmdo")
+
+[node name="@Node3D@46497" type="Node3D" parent="HexTiles" unique_id=2069830129]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.225, 4.3301272)
+metadata/coord_h = Vector4(-5, 5, 0, 1)
+
+[node name="@MeshInstance3D@46498" type="MeshInstance3D" parent="HexTiles/@Node3D@46497" unique_id=39293600]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_r2siq")
+mesh = SubResource("CylinderMesh_y6qqs")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46497" unique_id=1643084483]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46497/CollisionBody" unique_id=731719051]
+shape = SubResource("ConvexPolygonShape3D_mq0t0")
+
+[node name="@Node3D@46499" type="Node3D" parent="HexTiles" unique_id=795225107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.35, -5.196152)
+metadata/coord_h = Vector4(-4, -1, 5, 2)
+
+[node name="@MeshInstance3D@46500" type="MeshInstance3D" parent="HexTiles/@Node3D@46499" unique_id=1281929552]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_p15gh")
+mesh = SubResource("CylinderMesh_a7met")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46499" unique_id=439649046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46499/CollisionBody" unique_id=1785579856]
+shape = SubResource("ConvexPolygonShape3D_5kpfa")
+
+[node name="@Node3D@46501" type="Node3D" parent="HexTiles" unique_id=1457853145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.225, -3.4641016)
+metadata/coord_h = Vector4(-4, 0, 4, 1)
+
+[node name="@MeshInstance3D@46502" type="MeshInstance3D" parent="HexTiles/@Node3D@46501" unique_id=339082287]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_2ygr8")
+mesh = SubResource("CylinderMesh_ncycq")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46501" unique_id=1965518873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46501/CollisionBody" unique_id=1320716072]
+shape = SubResource("ConvexPolygonShape3D_l5qj6")
+
+[node name="@Node3D@46503" type="Node3D" parent="HexTiles" unique_id=2013388920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.35, -1.7320508)
+metadata/coord_h = Vector4(-4, 1, 3, 2)
+
+[node name="@MeshInstance3D@46504" type="MeshInstance3D" parent="HexTiles/@Node3D@46503" unique_id=1970800163]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_xmc5d")
+mesh = SubResource("CylinderMesh_fhqvk")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46503" unique_id=1378987746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46503/CollisionBody" unique_id=81703167]
+shape = SubResource("ConvexPolygonShape3D_7nbkk")
+
+[node name="@Node3D@46505" type="Node3D" parent="HexTiles" unique_id=389545314]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.35, 0)
+metadata/coord_h = Vector4(-4, 2, 2, 2)
+
+[node name="@MeshInstance3D@46506" type="MeshInstance3D" parent="HexTiles/@Node3D@46505" unique_id=2092243606]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_1mnje")
+mesh = SubResource("CylinderMesh_crqrg")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46505" unique_id=1419751039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46505/CollisionBody" unique_id=900939011]
+shape = SubResource("ConvexPolygonShape3D_ppb0y")
+
+[node name="@Node3D@46507" type="Node3D" parent="HexTiles" unique_id=964952773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.35, 1.7320508)
+metadata/coord_h = Vector4(-4, 3, 1, 2)
+
+[node name="@MeshInstance3D@46508" type="MeshInstance3D" parent="HexTiles/@Node3D@46507" unique_id=656948392]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_xrcxc")
+mesh = SubResource("CylinderMesh_r0qgl")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46507" unique_id=2112402342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46507/CollisionBody" unique_id=1181160839]
+shape = SubResource("ConvexPolygonShape3D_ilwg5")
+
+[node name="@Node3D@46509" type="Node3D" parent="HexTiles" unique_id=1314285862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.225, 3.4641016)
+metadata/coord_h = Vector4(-4, 4, 0, 1)
+
+[node name="@MeshInstance3D@46510" type="MeshInstance3D" parent="HexTiles/@Node3D@46509" unique_id=1928171982]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_ib2b0")
+mesh = SubResource("CylinderMesh_axma0")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46509" unique_id=1521185857]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46509/CollisionBody" unique_id=1581429545]
+shape = SubResource("ConvexPolygonShape3D_dk5j3")
+
+[node name="@Node3D@46511" type="Node3D" parent="HexTiles" unique_id=453402232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.225, 5.196152)
+metadata/coord_h = Vector4(-4, 5, -1, 1)
+
+[node name="@MeshInstance3D@46512" type="MeshInstance3D" parent="HexTiles/@Node3D@46511" unique_id=404093947]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_30c2b")
+mesh = SubResource("CylinderMesh_vp211")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46511" unique_id=315141851]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46511/CollisionBody" unique_id=669782559]
+shape = SubResource("ConvexPolygonShape3D_6l2rj")
+
+[node name="@Node3D@46513" type="Node3D" parent="HexTiles" unique_id=1833880826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.475, -6.0621777)
+metadata/coord_h = Vector4(-3, -2, 5, 3)
+
+[node name="@MeshInstance3D@46514" type="MeshInstance3D" parent="HexTiles/@Node3D@46513" unique_id=789015292]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_str5d")
+mesh = SubResource("CylinderMesh_0i51r")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46513" unique_id=71607019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46513/CollisionBody" unique_id=1793308420]
+shape = SubResource("ConvexPolygonShape3D_dg8dv")
+
+[node name="@Node3D@46515" type="Node3D" parent="HexTiles" unique_id=880865385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.35, -4.3301272)
+metadata/coord_h = Vector4(-3, -1, 4, 2)
+
+[node name="@MeshInstance3D@46516" type="MeshInstance3D" parent="HexTiles/@Node3D@46515" unique_id=373021412]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_flnfo")
+mesh = SubResource("CylinderMesh_6j3f6")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46515" unique_id=271106266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46515/CollisionBody" unique_id=552004689]
+shape = SubResource("ConvexPolygonShape3D_cvkx6")
+
+[node name="@Node3D@46517" type="Node3D" parent="HexTiles" unique_id=587584744]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.225, -2.598076)
+metadata/coord_h = Vector4(-3, 0, 3, 1)
+
+[node name="@MeshInstance3D@46518" type="MeshInstance3D" parent="HexTiles/@Node3D@46517" unique_id=1046050423]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_aqki7")
+mesh = SubResource("CylinderMesh_ywt6u")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46517" unique_id=1857470876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46517/CollisionBody" unique_id=182515933]
+shape = SubResource("ConvexPolygonShape3D_5o0jh")
+
+[node name="@Node3D@46519" type="Node3D" parent="HexTiles" unique_id=1909682950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.225, -0.8660254)
+metadata/coord_h = Vector4(-3, 1, 2, 1)
+
+[node name="@MeshInstance3D@46520" type="MeshInstance3D" parent="HexTiles/@Node3D@46519" unique_id=1014404546]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_bn35o")
+mesh = SubResource("CylinderMesh_2b8c2")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46519" unique_id=1298036083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46519/CollisionBody" unique_id=995237282]
+shape = SubResource("ConvexPolygonShape3D_qhbkd")
+
+[node name="@Node3D@46521" type="Node3D" parent="HexTiles" unique_id=1724383329]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.225, 0.8660254)
+metadata/coord_h = Vector4(-3, 2, 1, 1)
+
+[node name="@MeshInstance3D@46522" type="MeshInstance3D" parent="HexTiles/@Node3D@46521" unique_id=1044217504]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_csy13")
+mesh = SubResource("CylinderMesh_gd2bv")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46521" unique_id=575266673]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46521/CollisionBody" unique_id=592499701]
+shape = SubResource("ConvexPolygonShape3D_vfxrl")
+
+[node name="@Node3D@46523" type="Node3D" parent="HexTiles" unique_id=1369415812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.225, 2.598076)
+metadata/coord_h = Vector4(-3, 3, 0, 1)
+
+[node name="@MeshInstance3D@46524" type="MeshInstance3D" parent="HexTiles/@Node3D@46523" unique_id=829633436]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_qjgfb")
+mesh = SubResource("CylinderMesh_ijwcd")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46523" unique_id=561029313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46523/CollisionBody" unique_id=1598890399]
+shape = SubResource("ConvexPolygonShape3D_toih1")
+
+[node name="@Node3D@46525" type="Node3D" parent="HexTiles" unique_id=24594796]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.225, 4.3301272)
+metadata/coord_h = Vector4(-3, 4, -1, 1)
+
+[node name="@MeshInstance3D@46526" type="MeshInstance3D" parent="HexTiles/@Node3D@46525" unique_id=1902331671]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_oke3m")
+mesh = SubResource("CylinderMesh_nfjc0")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46525" unique_id=1743088778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46525/CollisionBody" unique_id=1567137989]
+shape = SubResource("ConvexPolygonShape3D_tcvgo")
+
+[node name="@Node3D@46527" type="Node3D" parent="HexTiles" unique_id=1621412218]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.225, 6.0621777)
+metadata/coord_h = Vector4(-3, 5, -2, 1)
+
+[node name="@MeshInstance3D@46528" type="MeshInstance3D" parent="HexTiles/@Node3D@46527" unique_id=622066054]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_v87fb")
+mesh = SubResource("CylinderMesh_cy3tx")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46527" unique_id=678481740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46527/CollisionBody" unique_id=668335726]
+shape = SubResource("ConvexPolygonShape3D_1v1u6")
+
+[node name="@Node3D@46529" type="Node3D" parent="HexTiles" unique_id=1814292769]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.475, -6.928203)
+metadata/coord_h = Vector4(-2, -3, 5, 3)
+
+[node name="@MeshInstance3D@46530" type="MeshInstance3D" parent="HexTiles/@Node3D@46529" unique_id=1936401900]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_vgtf8")
+mesh = SubResource("CylinderMesh_phyuh")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46529" unique_id=647503572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46529/CollisionBody" unique_id=1247111103]
+shape = SubResource("ConvexPolygonShape3D_4fwnd")
+
+[node name="@Node3D@46531" type="Node3D" parent="HexTiles" unique_id=2037431266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.475, -5.196152)
+metadata/coord_h = Vector4(-2, -2, 4, 3)
+
+[node name="@MeshInstance3D@46532" type="MeshInstance3D" parent="HexTiles/@Node3D@46531" unique_id=29850904]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_1samb")
+mesh = SubResource("CylinderMesh_0h1u4")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46531" unique_id=1282789397]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46531/CollisionBody" unique_id=425493193]
+shape = SubResource("ConvexPolygonShape3D_mdybj")
+
+[node name="@Node3D@46533" type="Node3D" parent="HexTiles" unique_id=779076997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.475, -3.4641016)
+metadata/coord_h = Vector4(-2, -1, 3, 3)
+
+[node name="@MeshInstance3D@46534" type="MeshInstance3D" parent="HexTiles/@Node3D@46533" unique_id=1056375454]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_fovuw")
+mesh = SubResource("CylinderMesh_ck4qd")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46533" unique_id=1849099429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46533/CollisionBody" unique_id=1833937164]
+shape = SubResource("ConvexPolygonShape3D_0rcqt")
+
+[node name="@Node3D@46535" type="Node3D" parent="HexTiles" unique_id=625980331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.35, -1.7320508)
+metadata/coord_h = Vector4(-2, 0, 2, 2)
+
+[node name="@MeshInstance3D@46536" type="MeshInstance3D" parent="HexTiles/@Node3D@46535" unique_id=688918041]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_yh3nq")
+mesh = SubResource("CylinderMesh_dt6o1")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46535" unique_id=1161985288]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46535/CollisionBody" unique_id=17209252]
+shape = SubResource("ConvexPolygonShape3D_3gph1")
+
+[node name="@Node3D@46537" type="Node3D" parent="HexTiles" unique_id=509451852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.225, 0)
+metadata/coord_h = Vector4(-2, 1, 1, 1)
+
+[node name="@MeshInstance3D@46538" type="MeshInstance3D" parent="HexTiles/@Node3D@46537" unique_id=1423886672]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_uj71a")
+mesh = SubResource("CylinderMesh_dnekl")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46537" unique_id=1232758667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46537/CollisionBody" unique_id=1620446345]
+shape = SubResource("ConvexPolygonShape3D_4g7sc")
+
+[node name="@Node3D@46539" type="Node3D" parent="HexTiles" unique_id=565738211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.225, 1.7320508)
+metadata/coord_h = Vector4(-2, 2, 0, 1)
+
+[node name="@MeshInstance3D@46540" type="MeshInstance3D" parent="HexTiles/@Node3D@46539" unique_id=174464455]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_xtbml")
+mesh = SubResource("CylinderMesh_64t0p")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46539" unique_id=615405859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46539/CollisionBody" unique_id=671385572]
+shape = SubResource("ConvexPolygonShape3D_7a50k")
+
+[node name="@Node3D@46541" type="Node3D" parent="HexTiles" unique_id=504887312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.225, 3.4641016)
+metadata/coord_h = Vector4(-2, 3, -1, 1)
+
+[node name="@MeshInstance3D@46542" type="MeshInstance3D" parent="HexTiles/@Node3D@46541" unique_id=507252199]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_r7en0")
+mesh = SubResource("CylinderMesh_2ifoj")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46541" unique_id=1502436211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46541/CollisionBody" unique_id=1145714034]
+shape = SubResource("ConvexPolygonShape3D_thfe2")
+
+[node name="@Node3D@46543" type="Node3D" parent="HexTiles" unique_id=1228109732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.225, 5.196152)
+metadata/coord_h = Vector4(-2, 4, -2, 1)
+
+[node name="@MeshInstance3D@46544" type="MeshInstance3D" parent="HexTiles/@Node3D@46543" unique_id=1806237537]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_mtu6s")
+mesh = SubResource("CylinderMesh_37gt1")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46543" unique_id=1931658698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46543/CollisionBody" unique_id=983462456]
+shape = SubResource("ConvexPolygonShape3D_brcnf")
+
+[node name="@Node3D@46545" type="Node3D" parent="HexTiles" unique_id=1443266214]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.225, 6.928203)
+metadata/coord_h = Vector4(-2, 5, -3, 1)
+
+[node name="@MeshInstance3D@46546" type="MeshInstance3D" parent="HexTiles/@Node3D@46545" unique_id=1227425642]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_2b7s7")
+mesh = SubResource("CylinderMesh_5dwsy")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46545" unique_id=938374736]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46545/CollisionBody" unique_id=658502866]
+shape = SubResource("ConvexPolygonShape3D_vhgy3")
+
+[node name="@Node3D@46547" type="Node3D" parent="HexTiles" unique_id=1107742396]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.6, -7.7942286)
+metadata/coord_h = Vector4(-1, -4, 5, 4)
+
+[node name="@MeshInstance3D@46548" type="MeshInstance3D" parent="HexTiles/@Node3D@46547" unique_id=205852535]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_sndjx")
+mesh = SubResource("CylinderMesh_fyjfy")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46547" unique_id=907791334]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46547/CollisionBody" unique_id=1807689843]
+shape = SubResource("ConvexPolygonShape3D_53kjo")
+
+[node name="@Node3D@46549" type="Node3D" parent="HexTiles" unique_id=1636947389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.475, -6.0621777)
+metadata/coord_h = Vector4(-1, -3, 4, 3)
+
+[node name="@MeshInstance3D@46550" type="MeshInstance3D" parent="HexTiles/@Node3D@46549" unique_id=1892837088]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_4ep2i")
+mesh = SubResource("CylinderMesh_5mt1f")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46549" unique_id=597647252]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46549/CollisionBody" unique_id=1965585588]
+shape = SubResource("ConvexPolygonShape3D_em4in")
+
+[node name="@Node3D@46551" type="Node3D" parent="HexTiles" unique_id=1553413966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.475, -4.3301272)
+metadata/coord_h = Vector4(-1, -2, 3, 3)
+
+[node name="@MeshInstance3D@46552" type="MeshInstance3D" parent="HexTiles/@Node3D@46551" unique_id=559076455]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_vgsc4")
+mesh = SubResource("CylinderMesh_h3uca")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46551" unique_id=616187467]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46551/CollisionBody" unique_id=1511584015]
+shape = SubResource("ConvexPolygonShape3D_rhfld")
+
+[node name="@Node3D@46553" type="Node3D" parent="HexTiles" unique_id=1932358691]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.475, -2.598076)
+metadata/coord_h = Vector4(-1, -1, 2, 3)
+
+[node name="@MeshInstance3D@46554" type="MeshInstance3D" parent="HexTiles/@Node3D@46553" unique_id=744375281]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_ks6a8")
+mesh = SubResource("CylinderMesh_pmfoh")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46553" unique_id=97288539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46553/CollisionBody" unique_id=820359534]
+shape = SubResource("ConvexPolygonShape3D_i1sp0")
+
+[node name="@Node3D@46555" type="Node3D" parent="HexTiles" unique_id=1957330970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.35, -0.8660254)
+metadata/coord_h = Vector4(-1, 0, 1, 2)
+
+[node name="@MeshInstance3D@46556" type="MeshInstance3D" parent="HexTiles/@Node3D@46555" unique_id=1830626759]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_cyhq8")
+mesh = SubResource("CylinderMesh_ogieg")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46555" unique_id=1050986558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46555/CollisionBody" unique_id=980294958]
+shape = SubResource("ConvexPolygonShape3D_gwa6q")
+
+[node name="@Node3D@46557" type="Node3D" parent="HexTiles" unique_id=692070812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.225, 0.8660254)
+metadata/coord_h = Vector4(-1, 1, 0, 1)
+
+[node name="@MeshInstance3D@46558" type="MeshInstance3D" parent="HexTiles/@Node3D@46557" unique_id=63120290]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_iivpf")
+mesh = SubResource("CylinderMesh_32jf0")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46557" unique_id=1563189675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46557/CollisionBody" unique_id=1598654927]
+shape = SubResource("ConvexPolygonShape3D_vamve")
+
+[node name="@Node3D@46559" type="Node3D" parent="HexTiles" unique_id=269020926]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.225, 2.598076)
+metadata/coord_h = Vector4(-1, 2, -1, 1)
+
+[node name="@MeshInstance3D@46560" type="MeshInstance3D" parent="HexTiles/@Node3D@46559" unique_id=854471919]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_i4872")
+mesh = SubResource("CylinderMesh_f6lac")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46559" unique_id=775825380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46559/CollisionBody" unique_id=755887397]
+shape = SubResource("ConvexPolygonShape3D_meu4f")
+
+[node name="@Node3D@46561" type="Node3D" parent="HexTiles" unique_id=1845620369]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.225, 4.3301272)
+metadata/coord_h = Vector4(-1, 3, -2, 1)
+
+[node name="@MeshInstance3D@46562" type="MeshInstance3D" parent="HexTiles/@Node3D@46561" unique_id=1365041085]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_yf2ro")
+mesh = SubResource("CylinderMesh_rflr7")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46561" unique_id=1045659330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46561/CollisionBody" unique_id=1004517765]
+shape = SubResource("ConvexPolygonShape3D_h4dva")
+
+[node name="@Node3D@46563" type="Node3D" parent="HexTiles" unique_id=1113804861]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.225, 6.0621777)
+metadata/coord_h = Vector4(-1, 4, -3, 1)
+
+[node name="@MeshInstance3D@46564" type="MeshInstance3D" parent="HexTiles/@Node3D@46563" unique_id=1907491767]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_11kep")
+mesh = SubResource("CylinderMesh_76qk7")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46563" unique_id=1017091013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46563/CollisionBody" unique_id=230592487]
+shape = SubResource("ConvexPolygonShape3D_437gl")
+
+[node name="@Node3D@46565" type="Node3D" parent="HexTiles" unique_id=888421164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.225, 7.7942286)
+metadata/coord_h = Vector4(-1, 5, -4, 1)
+
+[node name="@MeshInstance3D@46566" type="MeshInstance3D" parent="HexTiles/@Node3D@46565" unique_id=1001359543]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_ceaar")
+mesh = SubResource("CylinderMesh_fmpnv")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46565" unique_id=1967876997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46565/CollisionBody" unique_id=896488693]
+shape = SubResource("ConvexPolygonShape3D_wkmni")
+
+[node name="@Node3D@46567" type="Node3D" parent="HexTiles" unique_id=1154444353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.475, -8.6602545)
+metadata/coord_h = Vector4(0, -5, 5, 3)
+
+[node name="@MeshInstance3D@46568" type="MeshInstance3D" parent="HexTiles/@Node3D@46567" unique_id=1846193610]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_6x0xp")
+mesh = SubResource("CylinderMesh_4d3es")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46567" unique_id=846709215]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46567/CollisionBody" unique_id=1388971496]
+shape = SubResource("ConvexPolygonShape3D_3tky1")
+
+[node name="@Node3D@46569" type="Node3D" parent="HexTiles" unique_id=1468074180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.475, -6.928203)
+metadata/coord_h = Vector4(0, -4, 4, 3)
+
+[node name="@MeshInstance3D@46570" type="MeshInstance3D" parent="HexTiles/@Node3D@46569" unique_id=2100772689]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_q2lp0")
+mesh = SubResource("CylinderMesh_prudx")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46569" unique_id=1323149109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46569/CollisionBody" unique_id=1093913249]
+shape = SubResource("ConvexPolygonShape3D_1084p")
+
+[node name="@Node3D@46571" type="Node3D" parent="HexTiles" unique_id=106041444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.475, -5.196152)
+metadata/coord_h = Vector4(0, -3, 3, 3)
+
+[node name="@MeshInstance3D@46572" type="MeshInstance3D" parent="HexTiles/@Node3D@46571" unique_id=1244772524]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_wq64j")
+mesh = SubResource("CylinderMesh_qb7lq")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46571" unique_id=1565867127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46571/CollisionBody" unique_id=476420081]
+shape = SubResource("ConvexPolygonShape3D_84aku")
+
+[node name="@Node3D@46573" type="Node3D" parent="HexTiles" unique_id=604004208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -3.4641016)
+metadata/coord_h = Vector4(0, -2, 2, 4)
+
+[node name="@MeshInstance3D@46574" type="MeshInstance3D" parent="HexTiles/@Node3D@46573" unique_id=165846551]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_2hyuv")
+mesh = SubResource("CylinderMesh_t3hmp")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46573" unique_id=397263441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46573/CollisionBody" unique_id=208247]
+shape = SubResource("ConvexPolygonShape3D_ioq5j")
+
+[node name="@Node3D@46575" type="Node3D" parent="HexTiles" unique_id=1280664810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.475, -1.7320508)
+metadata/coord_h = Vector4(0, -1, 1, 3)
+
+[node name="@MeshInstance3D@46576" type="MeshInstance3D" parent="HexTiles/@Node3D@46575" unique_id=8876480]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_sx4b5")
+mesh = SubResource("CylinderMesh_nmbju")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46575" unique_id=1237003402]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46575/CollisionBody" unique_id=1882165136]
+shape = SubResource("ConvexPolygonShape3D_xb1p8")
+
+[node name="@Node3D@46577" type="Node3D" parent="HexTiles" unique_id=385288117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.475, 0)
+metadata/coord_h = Vector4(0, 0, 0, 3)
+
+[node name="@MeshInstance3D@46578" type="MeshInstance3D" parent="HexTiles/@Node3D@46577" unique_id=266459574]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_04ydh")
+mesh = SubResource("CylinderMesh_4t5tw")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46577" unique_id=737341861]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46577/CollisionBody" unique_id=656173303]
+shape = SubResource("ConvexPolygonShape3D_315wf")
+
+[node name="@Node3D@46579" type="Node3D" parent="HexTiles" unique_id=1797335340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 1.7320508)
+metadata/coord_h = Vector4(0, 1, -1, 2)
+
+[node name="@MeshInstance3D@46580" type="MeshInstance3D" parent="HexTiles/@Node3D@46579" unique_id=2090124363]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_w7gyh")
+mesh = SubResource("CylinderMesh_svqok")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46579" unique_id=516944319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46579/CollisionBody" unique_id=274278433]
+shape = SubResource("ConvexPolygonShape3D_nxqb3")
+
+[node name="@Node3D@46581" type="Node3D" parent="HexTiles" unique_id=1156981106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 3.4641016)
+metadata/coord_h = Vector4(0, 2, -2, 2)
+
+[node name="@MeshInstance3D@46582" type="MeshInstance3D" parent="HexTiles/@Node3D@46581" unique_id=1362919675]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_27ce1")
+mesh = SubResource("CylinderMesh_kvea6")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46581" unique_id=762347937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46581/CollisionBody" unique_id=1396952984]
+shape = SubResource("ConvexPolygonShape3D_27nmg")
+
+[node name="@Node3D@46583" type="Node3D" parent="HexTiles" unique_id=330490801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 5.196152)
+metadata/coord_h = Vector4(0, 3, -3, 2)
+
+[node name="@MeshInstance3D@46584" type="MeshInstance3D" parent="HexTiles/@Node3D@46583" unique_id=86802830]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_jl6aa")
+mesh = SubResource("CylinderMesh_to35p")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46583" unique_id=1015701181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46583/CollisionBody" unique_id=1029258143]
+shape = SubResource("ConvexPolygonShape3D_xm2iq")
+
+[node name="@Node3D@46585" type="Node3D" parent="HexTiles" unique_id=619174355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 6.928203)
+metadata/coord_h = Vector4(0, 4, -4, 2)
+
+[node name="@MeshInstance3D@46586" type="MeshInstance3D" parent="HexTiles/@Node3D@46585" unique_id=1992021397]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_yjwbu")
+mesh = SubResource("CylinderMesh_r5rym")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46585" unique_id=1364117358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46585/CollisionBody" unique_id=553827893]
+shape = SubResource("ConvexPolygonShape3D_xex0d")
+
+[node name="@Node3D@46587" type="Node3D" parent="HexTiles" unique_id=1389577923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 8.6602545)
+metadata/coord_h = Vector4(0, 5, -5, 2)
+
+[node name="@MeshInstance3D@46588" type="MeshInstance3D" parent="HexTiles/@Node3D@46587" unique_id=968456818]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_eh5xc")
+mesh = SubResource("CylinderMesh_bth6r")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46587" unique_id=1344230668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46587/CollisionBody" unique_id=1657991647]
+shape = SubResource("ConvexPolygonShape3D_8k351")
+
+[node name="@Node3D@46589" type="Node3D" parent="HexTiles" unique_id=471479046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.475, -7.7942286)
+metadata/coord_h = Vector4(1, -5, 4, 3)
+
+[node name="@MeshInstance3D@46590" type="MeshInstance3D" parent="HexTiles/@Node3D@46589" unique_id=769370911]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_xsmn1")
+mesh = SubResource("CylinderMesh_sqy6a")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46589" unique_id=771437159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46589/CollisionBody" unique_id=1996037310]
+shape = SubResource("ConvexPolygonShape3D_xrpua")
+
+[node name="@Node3D@46591" type="Node3D" parent="HexTiles" unique_id=806619831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.6, -6.0621777)
+metadata/coord_h = Vector4(1, -4, 3, 4)
+
+[node name="@MeshInstance3D@46592" type="MeshInstance3D" parent="HexTiles/@Node3D@46591" unique_id=823599704]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_u0ase")
+mesh = SubResource("CylinderMesh_xqo2w")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46591" unique_id=831482739]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46591/CollisionBody" unique_id=370737144]
+shape = SubResource("ConvexPolygonShape3D_d41ej")
+
+[node name="@Node3D@46593" type="Node3D" parent="HexTiles" unique_id=1480768265]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.6, -4.3301272)
+metadata/coord_h = Vector4(1, -3, 2, 4)
+
+[node name="@MeshInstance3D@46594" type="MeshInstance3D" parent="HexTiles/@Node3D@46593" unique_id=488468241]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_mmrnf")
+mesh = SubResource("CylinderMesh_vwkg6")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46593" unique_id=1432561511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46593/CollisionBody" unique_id=1880365056]
+shape = SubResource("ConvexPolygonShape3D_b0aoi")
+
+[node name="@Node3D@46595" type="Node3D" parent="HexTiles" unique_id=354563934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.6, -2.598076)
+metadata/coord_h = Vector4(1, -2, 1, 4)
+
+[node name="@MeshInstance3D@46596" type="MeshInstance3D" parent="HexTiles/@Node3D@46595" unique_id=1045494905]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_clrdw")
+mesh = SubResource("CylinderMesh_kaamg")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46595" unique_id=1237329829]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46595/CollisionBody" unique_id=180588095]
+shape = SubResource("ConvexPolygonShape3D_2vodq")
+
+[node name="@Node3D@46597" type="Node3D" parent="HexTiles" unique_id=1676421015]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.475, -0.8660254)
+metadata/coord_h = Vector4(1, -1, 0, 3)
+
+[node name="@MeshInstance3D@46598" type="MeshInstance3D" parent="HexTiles/@Node3D@46597" unique_id=1421665329]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_ncp3b")
+mesh = SubResource("CylinderMesh_rq4d1")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46597" unique_id=213615651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46597/CollisionBody" unique_id=1308033225]
+shape = SubResource("ConvexPolygonShape3D_rgmq5")
+
+[node name="@Node3D@46599" type="Node3D" parent="HexTiles" unique_id=1860024593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.475, 0.8660254)
+metadata/coord_h = Vector4(1, 0, -1, 3)
+
+[node name="@MeshInstance3D@46600" type="MeshInstance3D" parent="HexTiles/@Node3D@46599" unique_id=1729086597]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_tpknd")
+mesh = SubResource("CylinderMesh_rfkhi")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46599" unique_id=544092120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46599/CollisionBody" unique_id=528452224]
+shape = SubResource("ConvexPolygonShape3D_41ja1")
+
+[node name="@Node3D@46601" type="Node3D" parent="HexTiles" unique_id=1529175914]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.35, 2.598076)
+metadata/coord_h = Vector4(1, 1, -2, 2)
+
+[node name="@MeshInstance3D@46602" type="MeshInstance3D" parent="HexTiles/@Node3D@46601" unique_id=1749773585]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_385xr")
+mesh = SubResource("CylinderMesh_74jqy")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46601" unique_id=1268963599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46601/CollisionBody" unique_id=720856606]
+shape = SubResource("ConvexPolygonShape3D_g2osd")
+
+[node name="@Node3D@46603" type="Node3D" parent="HexTiles" unique_id=1252691614]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.35, 4.3301272)
+metadata/coord_h = Vector4(1, 2, -3, 2)
+
+[node name="@MeshInstance3D@46604" type="MeshInstance3D" parent="HexTiles/@Node3D@46603" unique_id=2108084907]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_fuca8")
+mesh = SubResource("CylinderMesh_i2d0u")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46603" unique_id=1210860350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46603/CollisionBody" unique_id=2076854552]
+shape = SubResource("ConvexPolygonShape3D_bwr1y")
+
+[node name="@Node3D@46605" type="Node3D" parent="HexTiles" unique_id=481220928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.35, 6.0621777)
+metadata/coord_h = Vector4(1, 3, -4, 2)
+
+[node name="@MeshInstance3D@46606" type="MeshInstance3D" parent="HexTiles/@Node3D@46605" unique_id=1648321576]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_3krox")
+mesh = SubResource("CylinderMesh_u7scw")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46605" unique_id=986424364]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46605/CollisionBody" unique_id=368711726]
+shape = SubResource("ConvexPolygonShape3D_w3k6a")
+
+[node name="@Node3D@46607" type="Node3D" parent="HexTiles" unique_id=748196579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.35, 7.7942286)
+metadata/coord_h = Vector4(1, 4, -5, 2)
+
+[node name="@MeshInstance3D@46608" type="MeshInstance3D" parent="HexTiles/@Node3D@46607" unique_id=1437790859]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_xeaq4")
+mesh = SubResource("CylinderMesh_6tvq8")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46607" unique_id=1941208773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46607/CollisionBody" unique_id=924836801]
+shape = SubResource("ConvexPolygonShape3D_owmhp")
+
+[node name="@Node3D@46609" type="Node3D" parent="HexTiles" unique_id=497615225]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.6, -6.928203)
+metadata/coord_h = Vector4(2, -5, 3, 4)
+
+[node name="@MeshInstance3D@46610" type="MeshInstance3D" parent="HexTiles/@Node3D@46609" unique_id=1137346953]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_dixku")
+mesh = SubResource("CylinderMesh_xxee5")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46609" unique_id=1028926928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46609/CollisionBody" unique_id=2004430389]
+shape = SubResource("ConvexPolygonShape3D_2vjhq")
+
+[node name="@Node3D@46611" type="Node3D" parent="HexTiles" unique_id=1113768264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.6, -5.196152)
+metadata/coord_h = Vector4(2, -4, 2, 4)
+
+[node name="@MeshInstance3D@46612" type="MeshInstance3D" parent="HexTiles/@Node3D@46611" unique_id=390044304]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_jesiw")
+mesh = SubResource("CylinderMesh_3fdwd")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46611" unique_id=342507636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46611/CollisionBody" unique_id=1353634237]
+shape = SubResource("ConvexPolygonShape3D_u6kj5")
+
+[node name="@Node3D@46613" type="Node3D" parent="HexTiles" unique_id=758703782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.6, -3.4641016)
+metadata/coord_h = Vector4(2, -3, 1, 4)
+
+[node name="@MeshInstance3D@46614" type="MeshInstance3D" parent="HexTiles/@Node3D@46613" unique_id=1215362717]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_auj42")
+mesh = SubResource("CylinderMesh_7djwg")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46613" unique_id=873712799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46613/CollisionBody" unique_id=355958529]
+shape = SubResource("ConvexPolygonShape3D_12xfj")
+
+[node name="@Node3D@46615" type="Node3D" parent="HexTiles" unique_id=1183891689]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.6, -1.7320508)
+metadata/coord_h = Vector4(2, -2, 0, 4)
+
+[node name="@MeshInstance3D@46616" type="MeshInstance3D" parent="HexTiles/@Node3D@46615" unique_id=1880865505]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_dcpda")
+mesh = SubResource("CylinderMesh_c3rdt")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46615" unique_id=1379777780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46615/CollisionBody" unique_id=1219109096]
+shape = SubResource("ConvexPolygonShape3D_kim85")
+
+[node name="@Node3D@46617" type="Node3D" parent="HexTiles" unique_id=696569894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.475, 0)
+metadata/coord_h = Vector4(2, -1, -1, 3)
+
+[node name="@MeshInstance3D@46618" type="MeshInstance3D" parent="HexTiles/@Node3D@46617" unique_id=996692400]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_nxdbn")
+mesh = SubResource("CylinderMesh_mx15b")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46617" unique_id=122640747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46617/CollisionBody" unique_id=1971464468]
+shape = SubResource("ConvexPolygonShape3D_5kkpn")
+
+[node name="@Node3D@46619" type="Node3D" parent="HexTiles" unique_id=1582393473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.475, 1.7320508)
+metadata/coord_h = Vector4(2, 0, -2, 3)
+
+[node name="@MeshInstance3D@46620" type="MeshInstance3D" parent="HexTiles/@Node3D@46619" unique_id=1313528039]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_7plf6")
+mesh = SubResource("CylinderMesh_p8nm6")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46619" unique_id=1689536142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46619/CollisionBody" unique_id=1751085967]
+shape = SubResource("ConvexPolygonShape3D_0uurf")
+
+[node name="@Node3D@46621" type="Node3D" parent="HexTiles" unique_id=827010779]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.35, 3.4641016)
+metadata/coord_h = Vector4(2, 1, -3, 2)
+
+[node name="@MeshInstance3D@46622" type="MeshInstance3D" parent="HexTiles/@Node3D@46621" unique_id=905567813]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_131b1")
+mesh = SubResource("CylinderMesh_uvtsw")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46621" unique_id=506545321]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46621/CollisionBody" unique_id=1631772756]
+shape = SubResource("ConvexPolygonShape3D_ropgp")
+
+[node name="@Node3D@46623" type="Node3D" parent="HexTiles" unique_id=753065492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.35, 5.196152)
+metadata/coord_h = Vector4(2, 2, -4, 2)
+
+[node name="@MeshInstance3D@46624" type="MeshInstance3D" parent="HexTiles/@Node3D@46623" unique_id=1166100159]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_lurc4")
+mesh = SubResource("CylinderMesh_cw4jk")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46623" unique_id=1017252153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46623/CollisionBody" unique_id=941899558]
+shape = SubResource("ConvexPolygonShape3D_kf3q4")
+
+[node name="@Node3D@46625" type="Node3D" parent="HexTiles" unique_id=1583094936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.35, 6.928203)
+metadata/coord_h = Vector4(2, 3, -5, 2)
+
+[node name="@MeshInstance3D@46626" type="MeshInstance3D" parent="HexTiles/@Node3D@46625" unique_id=1325895786]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_osbs1")
+mesh = SubResource("CylinderMesh_a48le")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46625" unique_id=12021115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46625/CollisionBody" unique_id=1419407406]
+shape = SubResource("ConvexPolygonShape3D_42t5j")
+
+[node name="@Node3D@46627" type="Node3D" parent="HexTiles" unique_id=1976700686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.6, -6.0621777)
+metadata/coord_h = Vector4(3, -5, 2, 4)
+
+[node name="@MeshInstance3D@46628" type="MeshInstance3D" parent="HexTiles/@Node3D@46627" unique_id=2019665535]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_8onf6")
+mesh = SubResource("CylinderMesh_r4dk6")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46627" unique_id=54089052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46627/CollisionBody" unique_id=1544600525]
+shape = SubResource("ConvexPolygonShape3D_c8oye")
+
+[node name="@Node3D@46629" type="Node3D" parent="HexTiles" unique_id=144591164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.6, -4.3301272)
+metadata/coord_h = Vector4(3, -4, 1, 4)
+
+[node name="@MeshInstance3D@46630" type="MeshInstance3D" parent="HexTiles/@Node3D@46629" unique_id=994724744]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_r2kav")
+mesh = SubResource("CylinderMesh_nl7ew")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46629" unique_id=1818173862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46629/CollisionBody" unique_id=405684723]
+shape = SubResource("ConvexPolygonShape3D_dntjx")
+
+[node name="@Node3D@46631" type="Node3D" parent="HexTiles" unique_id=1678800204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.6, -2.598076)
+metadata/coord_h = Vector4(3, -3, 0, 4)
+
+[node name="@MeshInstance3D@46632" type="MeshInstance3D" parent="HexTiles/@Node3D@46631" unique_id=1136867439]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_1h8o7")
+mesh = SubResource("CylinderMesh_6gmwc")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46631" unique_id=1577590530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46631/CollisionBody" unique_id=1877257418]
+shape = SubResource("ConvexPolygonShape3D_2ulxe")
+
+[node name="@Node3D@46633" type="Node3D" parent="HexTiles" unique_id=384463427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.6, -0.8660254)
+metadata/coord_h = Vector4(3, -2, -1, 4)
+
+[node name="@MeshInstance3D@46634" type="MeshInstance3D" parent="HexTiles/@Node3D@46633" unique_id=1172406375]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_vcgo7")
+mesh = SubResource("CylinderMesh_8u6ni")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46633" unique_id=605245798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46633/CollisionBody" unique_id=2119878278]
+shape = SubResource("ConvexPolygonShape3D_tnr24")
+
+[node name="@Node3D@46635" type="Node3D" parent="HexTiles" unique_id=1865950418]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.475, 0.8660254)
+metadata/coord_h = Vector4(3, -1, -2, 3)
+
+[node name="@MeshInstance3D@46636" type="MeshInstance3D" parent="HexTiles/@Node3D@46635" unique_id=252340887]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_tnyij")
+mesh = SubResource("CylinderMesh_ej2gm")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46635" unique_id=1842805895]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46635/CollisionBody" unique_id=1473954278]
+shape = SubResource("ConvexPolygonShape3D_bqxck")
+
+[node name="@Node3D@46637" type="Node3D" parent="HexTiles" unique_id=1736168689]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.475, 2.598076)
+metadata/coord_h = Vector4(3, 0, -3, 3)
+
+[node name="@MeshInstance3D@46638" type="MeshInstance3D" parent="HexTiles/@Node3D@46637" unique_id=1926124742]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_h2ipn")
+mesh = SubResource("CylinderMesh_4t24m")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46637" unique_id=366018042]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46637/CollisionBody" unique_id=238915927]
+shape = SubResource("ConvexPolygonShape3D_1rt36")
+
+[node name="@Node3D@46639" type="Node3D" parent="HexTiles" unique_id=1223605068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.35, 4.3301272)
+metadata/coord_h = Vector4(3, 1, -4, 2)
+
+[node name="@MeshInstance3D@46640" type="MeshInstance3D" parent="HexTiles/@Node3D@46639" unique_id=307531923]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_8fq8m")
+mesh = SubResource("CylinderMesh_fslyn")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46639" unique_id=1457972841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46639/CollisionBody" unique_id=841819838]
+shape = SubResource("ConvexPolygonShape3D_ni1di")
+
+[node name="@Node3D@46641" type="Node3D" parent="HexTiles" unique_id=116493045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.35, 6.0621777)
+metadata/coord_h = Vector4(3, 2, -5, 2)
+
+[node name="@MeshInstance3D@46642" type="MeshInstance3D" parent="HexTiles/@Node3D@46641" unique_id=378640523]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_oskd3")
+mesh = SubResource("CylinderMesh_8noo2")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46641" unique_id=529303183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46641/CollisionBody" unique_id=887226036]
+shape = SubResource("ConvexPolygonShape3D_fmdnj")
+
+[node name="@Node3D@46643" type="Node3D" parent="HexTiles" unique_id=797859440]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.6, -5.196152)
+metadata/coord_h = Vector4(4, -5, 1, 4)
+
+[node name="@MeshInstance3D@46644" type="MeshInstance3D" parent="HexTiles/@Node3D@46643" unique_id=349397787]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_4kq8c")
+mesh = SubResource("CylinderMesh_qrevc")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46643" unique_id=588444804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46643/CollisionBody" unique_id=1935239636]
+shape = SubResource("ConvexPolygonShape3D_70wxg")
+
+[node name="@Node3D@46645" type="Node3D" parent="HexTiles" unique_id=1997139930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.6, -3.4641016)
+metadata/coord_h = Vector4(4, -4, 0, 4)
+
+[node name="@MeshInstance3D@46646" type="MeshInstance3D" parent="HexTiles/@Node3D@46645" unique_id=520133471]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_xort8")
+mesh = SubResource("CylinderMesh_nm02m")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46645" unique_id=824205292]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46645/CollisionBody" unique_id=1686060257]
+shape = SubResource("ConvexPolygonShape3D_flk0l")
+
+[node name="@Node3D@46647" type="Node3D" parent="HexTiles" unique_id=2064329209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.475, -1.7320508)
+metadata/coord_h = Vector4(4, -3, -1, 3)
+
+[node name="@MeshInstance3D@46648" type="MeshInstance3D" parent="HexTiles/@Node3D@46647" unique_id=1549857508]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_b3j3v")
+mesh = SubResource("CylinderMesh_lxvs6")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46647" unique_id=501400886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46647/CollisionBody" unique_id=546238539]
+shape = SubResource("ConvexPolygonShape3D_cigi0")
+
+[node name="@Node3D@46649" type="Node3D" parent="HexTiles" unique_id=589044115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.475, 0)
+metadata/coord_h = Vector4(4, -2, -2, 3)
+
+[node name="@MeshInstance3D@46650" type="MeshInstance3D" parent="HexTiles/@Node3D@46649" unique_id=1783458983]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_ho6l3")
+mesh = SubResource("CylinderMesh_h3okr")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46649" unique_id=45056736]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46649/CollisionBody" unique_id=2045251281]
+shape = SubResource("ConvexPolygonShape3D_6pnnr")
+
+[node name="@Node3D@46651" type="Node3D" parent="HexTiles" unique_id=619893302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.475, 1.7320508)
+metadata/coord_h = Vector4(4, -1, -3, 3)
+
+[node name="@MeshInstance3D@46652" type="MeshInstance3D" parent="HexTiles/@Node3D@46651" unique_id=1012635807]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_tvf03")
+mesh = SubResource("CylinderMesh_u6ela")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46651" unique_id=91669779]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46651/CollisionBody" unique_id=1600157801]
+shape = SubResource("ConvexPolygonShape3D_mq2cx")
+
+[node name="@Node3D@46653" type="Node3D" parent="HexTiles" unique_id=1008473103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.475, 3.4641016)
+metadata/coord_h = Vector4(4, 0, -4, 3)
+
+[node name="@MeshInstance3D@46654" type="MeshInstance3D" parent="HexTiles/@Node3D@46653" unique_id=1087390446]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_cgyai")
+mesh = SubResource("CylinderMesh_yoysl")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46653" unique_id=174548354]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46653/CollisionBody" unique_id=699026914]
+shape = SubResource("ConvexPolygonShape3D_jyond")
+
+[node name="@Node3D@46655" type="Node3D" parent="HexTiles" unique_id=646320685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.475, 5.196152)
+metadata/coord_h = Vector4(4, 1, -5, 3)
+
+[node name="@MeshInstance3D@46656" type="MeshInstance3D" parent="HexTiles/@Node3D@46655" unique_id=1286221961]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_1qd7i")
+mesh = SubResource("CylinderMesh_b4u6j")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46655" unique_id=831843097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46655/CollisionBody" unique_id=2086044498]
+shape = SubResource("ConvexPolygonShape3D_j5o2w")
+
+[node name="@Node3D@46657" type="Node3D" parent="HexTiles" unique_id=732033675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.475, -4.3301272)
+metadata/coord_h = Vector4(5, -5, 0, 3)
+
+[node name="@MeshInstance3D@46658" type="MeshInstance3D" parent="HexTiles/@Node3D@46657" unique_id=227849952]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_7d0od")
+mesh = SubResource("CylinderMesh_nb5i1")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46657" unique_id=221765474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46657/CollisionBody" unique_id=821049538]
+shape = SubResource("ConvexPolygonShape3D_uwes0")
+
+[node name="@Node3D@46659" type="Node3D" parent="HexTiles" unique_id=1060977709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.6, -2.598076)
+metadata/coord_h = Vector4(5, -4, -1, 4)
+
+[node name="@MeshInstance3D@46660" type="MeshInstance3D" parent="HexTiles/@Node3D@46659" unique_id=123137703]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_lq684")
+mesh = SubResource("CylinderMesh_jda66")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46659" unique_id=862892982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46659/CollisionBody" unique_id=443502329]
+shape = SubResource("ConvexPolygonShape3D_8a6jm")
+
+[node name="@Node3D@46661" type="Node3D" parent="HexTiles" unique_id=1817078449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.475, -0.8660254)
+metadata/coord_h = Vector4(5, -3, -2, 3)
+
+[node name="@MeshInstance3D@46662" type="MeshInstance3D" parent="HexTiles/@Node3D@46661" unique_id=989047405]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_tm2cl")
+mesh = SubResource("CylinderMesh_arwlf")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46661" unique_id=2109885535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46661/CollisionBody" unique_id=1461735654]
+shape = SubResource("ConvexPolygonShape3D_0qxrp")
+
+[node name="@Node3D@46663" type="Node3D" parent="HexTiles" unique_id=1745441543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.475, 0.8660254)
+metadata/coord_h = Vector4(5, -2, -3, 3)
+
+[node name="@MeshInstance3D@46664" type="MeshInstance3D" parent="HexTiles/@Node3D@46663" unique_id=84690754]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_2562x")
+mesh = SubResource("CylinderMesh_ihm0d")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46663" unique_id=1734716951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46663/CollisionBody" unique_id=602595077]
+shape = SubResource("ConvexPolygonShape3D_xqwph")
+
+[node name="@Node3D@46665" type="Node3D" parent="HexTiles" unique_id=1586259385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.475, 2.598076)
+metadata/coord_h = Vector4(5, -1, -4, 3)
+
+[node name="@MeshInstance3D@46666" type="MeshInstance3D" parent="HexTiles/@Node3D@46665" unique_id=1757975491]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_hbni1")
+mesh = SubResource("CylinderMesh_80csa")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46665" unique_id=268588865]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46665/CollisionBody" unique_id=1038410134]
+shape = SubResource("ConvexPolygonShape3D_0dy7d")
+
+[node name="@Node3D@46667" type="Node3D" parent="HexTiles" unique_id=345062709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.35, 4.3301272)
+metadata/coord_h = Vector4(5, 0, -5, 2)
+
+[node name="@MeshInstance3D@46668" type="MeshInstance3D" parent="HexTiles/@Node3D@46667" unique_id=1812015249]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_wcin0")
+mesh = SubResource("CylinderMesh_42lda")
+
+[node name="CollisionBody" type="StaticBody3D" parent="HexTiles/@Node3D@46667" unique_id=1647879530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="HexTiles/@Node3D@46667/CollisionBody" unique_id=275651957]
+shape = SubResource("ConvexPolygonShape3D_hrt8l")
